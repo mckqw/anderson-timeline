@@ -1,0 +1,25 @@
+{
+  "name": "fileserver",
+  "version": "1.0.0",
+  "description": "a content file server for the anderson-timeline project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mckqw/anderson-timeline-fileserver.git"
+  },
+  "keywords": [
+    "fileserver"
+  ],
+  "author": "Matthew Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mckqw/anderson-timeline-fileserver/issues"
+  },
+  "homepage": "https://github.com/mckqw/anderson-timeline-fileserver#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
