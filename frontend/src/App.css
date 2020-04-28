@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.graphBlock{
+  width: 60%;
+  float: left;
+}
+.explainationBlock{
+  text-align: left;
+  margin-left: 60%;
+}
+.explainationBlock h1{
+  top: 0;
+}
