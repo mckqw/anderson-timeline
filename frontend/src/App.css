@@ -1,17 +1,30 @@
 .App {
-  text-align: center;
-  height: 100%;
-  width: 80%;
+  margin: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #99A3A4;
   margin: auto;
+  height: 1080px;
+  width: 1920px;
+  overflow: hidden;
+  margin-top: calc((100vh - 1084px) / 2);
+  margin-bottom: calc((100vh - 1084px) / 2);
 }
-.graphBlock{
-  width: 60%;
-  float: left;
+
+#hamilVan{
+	height: 120px;
 }
-.explainationBlock{
-  text-align: left;
-  margin-left: 60%;
+
+#mover{
+	height: 120px;
+	width: 120px;
+	background-color: #1E8449;
+	position: absolute;
+	bottom: 120px;
+	left: 120px;
 }
-.explainationBlock h1{
-  top: 0;
+
+#mapFrame{
+	height: 100%;
+	width: 100%;
+	position: relative;
 }

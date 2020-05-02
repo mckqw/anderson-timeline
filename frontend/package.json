@@ -1,33 +1,35 @@
 {
-  "name": "anderson-timeline",
+  "name": "timeline",
   "version": "0.1.0",
-  "private": true,
+  "description": "Timeline honoring Don Anderson",
+  "repository": "https://github.com/mckqw/anderson-timeline",
+  "main": "webpack.config.js",
   "dependencies": {
-    "plotly.js": "^1.53.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-plotly.js": "^2.4.0",
-    "react-scripts": "^3.4.1"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "8.0.5",
+    "css-loader": "2.1.1",
+    "file-loader": "^4.0.0",
+    "react-hot-loader": "^4.11.1",
+    "style-loader": "0.23.1",
+    "webpack": "4.30.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "webpack --mode development",
+    "start:dev": "webpack-dev-server"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "author": "Chris Hamilton",
+  "engines": {
+    "npm": ">=5",
+    "node": ">=8"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "license": "ISC"
 }

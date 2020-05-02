@@ -1,0 +1,10 @@
+body{
+	font-family: 'FuturaNo2D','century gothic', Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color: rgba(254, 253, 253, 0.95);
+	background-color: #000000;
+	font-variant: small-caps;
+	font-style: italic;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	margin:0;
+}
