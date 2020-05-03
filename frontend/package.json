@@ -5,6 +5,7 @@
   "repository": "https://github.com/mckqw/anderson-timeline",
   "main": "webpack.config.js",
   "dependencies": {
+    "acorn": "^7.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
