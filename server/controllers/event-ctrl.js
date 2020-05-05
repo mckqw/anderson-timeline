@@ -107,12 +107,13 @@ getEventById = async (req, res) => {
 
 getEvents = async (req, res) => {
 
-    let page = (( req.query.page == 0  || req.query.page == undefined ) ? 0: req.query.page);
-    let limit = (( req.query.limit == 0 || req.query.limit == undefined ) ? 10 : req.query.limit);
+    let page = (( req.query.page == 0 || req.query.page == undefined ) ? 0: req.query.page);
+    let limit = (( req.query.limit == 0  || req.query.limit == undefined ) ? 10 : req.query.limit);
     
     const options = {
       page: page,
       limit: limit,
+      offset: 0,
       collation: {
         locale: 'en'
       }
