@@ -54,6 +54,7 @@ updateEvent = async (req, res) => {
         event.description = body.description
         event.time = body.time
         event.imageLocation = body.imageLocation
+        event.titleImage = body.titleImage
         event.imageNames = body.imageNames
         event
             .save()
@@ -105,7 +106,19 @@ getEventById = async (req, res) => {
 }
 
 getEvents = async (req, res) => {
-    await Event.find({}, (err, events) => {
+
+    let page = (( req.query.page == 0 ) ? req.query.page : 0);
+    let limit = (( req.query.limit == 0 ) ? req.query.limit : 10);
+
+    const options = {
+      page: page,
+      limit: limit,
+      collation: {
+        locale: 'en'
+      }
+    };
+
+    Event.paginate({}, options).then(function(err, result) {
         if (err) {
             return res.status(400).json({ success: false, error: err })
         }
